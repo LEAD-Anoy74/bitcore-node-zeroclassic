@@ -6,7 +6,7 @@ A Bitcoin full node for building applications and services with Node.js. A node 
 ## Install
 
 ```bash
-npm install ZeroClassicClassic-Anoy74/bitcore-node-zeroclassic
+npm install LEAD-Anoy74/bitcore-node-zeroclassic
 ./node_modules/bitcore-node-zeroclassic/bin/bitcore-node start
 ```
 
@@ -15,13 +15,13 @@ Note: For your convenience, we distribute bitcoind binaries for x86_64 Linux and
 ## Install bitcore-node-zeroclassic with insight-api-zeroclassic and insight-ui-zeroclassic (tested with nodejs v4)
 
 ```bash
-npm install ZeroClassicClassic-Anoy74/bitcore-node-zeroclassic
+npm install LEAD-Anoy74/bitcore-node-zeroclassic
 ./node_modules/bitcore-node-zeroclassic/bin/bitcore-node create mynode
 cd mynode
-./node_modules/bitcore-node-zeroclassic/bin/bitcore-node install ZeroClassicClassic-Anoy74/insight-api-zeroclassic ZeroClassicClassic-Anoy74/insight-ui-zeroclassic
+./node_modules/bitcore-node-zeroclassic/bin/bitcore-node install LEAD-Anoy74/insight-api-zeroclassic LEAD-Anoy74/insight-ui-zeroclassic
 ```
 Now change the values of rpcuser and rpcpassword with values of your choice in the file bitcoind.js, located from the base path in: ./mynode/node_modules/bitcore-node-zeroclassic/lib/services/ .
-Copy the executables of the ZeroClassic daemon (you need the version of ZeroClassic daemon patched with the addition of rpc calls needed to bitcore-node-zeroclassic - https://github.com/ZeroClassicClassic-Anoy74/zeroclassic-1.0.14-1-bitcore) to the folder located from the base path in: ./node_modules/bitcore-node-zeroclassic/bin/ .
+Copy the executables of the ZeroClassic daemon (you need the version of ZeroClassic daemon patched with the addition of rpc calls needed to bitcore-node-zeroclassic - https://github.com/LEAD-Anoy74/zeroclassic-1.0.14-1-bitcore) to the folder located from the base path in: ./node_modules/bitcore-node-zeroclassic/bin/ .
 If you have changed directories, go back to: ./mynode/ and run the command:
 
 ```bash
@@ -56,8 +56,8 @@ This will create a directory with configuration files for your node and install 
 
 There are several add-on services available to extend the functionality of Bitcore:
 
-- [Insight API ZeroClassic](https://github.com/ZeroClassicClassic-Anoy74/insight-api-zeroclassic)
-- [Insight UI ZeroClassic](https://github.com/ZeroClassicClassic-Anoy74/insight-ui-zeroclassic)
+- [Insight API ZeroClassic](https://github.com/LEAD-Anoy74/insight-api-zeroclassic)
+- [Insight UI ZeroClassic](https://github.com/LEAD-Anoy74/insight-ui-zeroclassic)
 <!-- - [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) -->
 
 ## Documentation
