@@ -88,11 +88,11 @@ describe('Utils', function() {
 
   });
 
-  describe('#startAtZero', function() {
+  describe('#startAtZeroClassic', function() {
 
     it('will set key to zeroclassic if not set', function() {
       var obj = {};
-      utils.startAtZero(obj, 'key');
+      utils.startAtZeroClassic(obj, 'key');
       obj.key.should.equal(0);
     });
 
@@ -100,7 +100,7 @@ describe('Utils', function() {
       var obj = {
         key: 10
       };
-      utils.startAtZero(obj, 'key');
+      utils.startAtZeroClassic(obj, 'key');
       obj.key.should.equal(10);
     });
 
@@ -108,7 +108,7 @@ describe('Utils', function() {
       var obj = {
         key: false
       };
-      utils.startAtZero(obj, 'key');
+      utils.startAtZeroClassic(obj, 'key');
       obj.key.should.equal(false);
     });
 
@@ -116,7 +116,7 @@ describe('Utils', function() {
       var obj = {
         key: undefined
       };
-      utils.startAtZero(obj, 'key');
+      utils.startAtZeroClassic(obj, 'key');
       should.equal(obj.key, undefined);
     });
 
@@ -124,7 +124,7 @@ describe('Utils', function() {
       var obj = {
         key: null
       };
-      utils.startAtZero(obj, 'key');
+      utils.startAtZeroClassic(obj, 'key');
       should.equal(obj.key, null);
     });
 

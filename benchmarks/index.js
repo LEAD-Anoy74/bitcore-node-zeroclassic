@@ -5,7 +5,7 @@ var bitcoin = require('bitcoin');
 var async = require('async');
 var maxTime = 20;
 
-console.log('Zero Service native interface vs. Zero JSON RPC interface');
+console.log('ZeroClassic Service native interface vs. ZeroClassic JSON RPC interface');
 console.log('----------------------------------------------------------------------');
 
 // To run the benchmarks a fully synced Bitcore Core directory is needed. The RPC comands
@@ -43,12 +43,12 @@ bitcoind.start(function(err) {
   if (err) {
     throw err;
   }
-  console.log('Zero started');
+  console.log('ZeroClassic started');
 });
 
 bitcoind.on('ready', function() {
 
-  console.log('Zero ready');
+  console.log('ZeroClassic ready');
 
   var client = new bitcoin.Client({
     host: 'localhost',

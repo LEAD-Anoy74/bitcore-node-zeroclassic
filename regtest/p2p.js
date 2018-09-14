@@ -63,7 +63,7 @@ describe('P2P Functionality', function() {
         log.error('error="%s"', err.message);
       });
 
-      log.info('Waiting for Zero to initialize...');
+      log.info('Waiting for ZeroClassic to initialize...');
 
       bitcoind.start(function(err) {
         if (err) {
